@@ -10,7 +10,7 @@ import numpy as np
 from utils import torch_gc
 from tqdm import tqdm
 from pypinyin import lazy_pinyin
-from loader import UnstructuredPaddleImageLoader, UnstructuredPaddlePDFLoader
+#from loader import UnstructuredPaddleImageLoader, UnstructuredPaddlePDFLoader
 from models.base import (BaseAnswer,
                          AnswerResult,
                          AnswerResultStream,

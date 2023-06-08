@@ -64,7 +64,7 @@ class BaseFastChat(BaseLLM):
     """Model name to use."""
     temperature: float = 0.7
     """What sampling temperature to use."""
-    max_new_tokens: int = 200
+    max_new_tokens: int = 1000
     stop: int = 20
     batch_size: int = 20
     """Maximum number of retries to make when generating."""

@@ -42,7 +42,7 @@ class LLamaLLM(BaseAnswer, LLM, ABC):
     checkPoint: LoaderCheckPoint = None
     history = []
     history_len: int = 3
-    max_new_tokens: int = 500
+    max_new_tokens: int = 1000
     num_beams: int = 1
     temperature: float = 0.5
     top_p: float = 0.4
@@ -54,7 +54,7 @@ class LLamaLLM(BaseAnswer, LLM, ABC):
     stopping_criteria: Optional[StoppingCriteriaList] = None
     eos_token_id: Optional[int] = [2]
 
-    state: object = {'max_new_tokens': 50,
+    state: object = {'max_new_tokens': 1000,
                      'seed': 1,
                      'temperature': 0, 'top_p': 0.1,
                      'top_k': 40, 'typical_p': 1,
